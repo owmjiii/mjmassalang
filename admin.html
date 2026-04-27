@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Mj Massalang</title>
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <a id="tech-stack-hover" href="#tech-stack">Tech Stack</a>
+        <a id="projects-hover" href="#projects">Projects</a>
+        <a id="messages-hover" href="#messages">Messages</a>
+        <a href="1index.html">View Portfolio</a>
+
+        <div class="nav-underline"></div>
+
+    </nav>
+
+    <section id="tech-stack">
+
+        <h1>Current <span class="yellow">Tech Stack</span></h1>
+
+        <div class="parent-container-tech-stack" id="ts-list">
+
+            <div class="child-container-tech-stack">
+
+                <img src="Photoshop Logo.png" alt="Photoshop">
+                <span>Photoshop</span>
+
+            </div>
+
+            <div class="child-container-tech-stack">
+
+                <img src="Illustrator Logo.png" alt="Illustator">
+                <span>Illustator</span>
+
+            </div>
+
+            <div class="child-container-tech-stack">
+
+                <img src="cANVA lOGO.png" alt="Canva">
+                <span>Canva</span>
+
+            </div>
+
+            <div class="child-container-tech-stack">
+
+                <img src="Figma Logo.png" alt="Figma">
+                <span>Figma</span>
+
+            </div>
+
+            <div class="child-container-tech-stack">
+
+                <img src="Java Logo.png" alt="Java">
+                <span>Java</span>
+
+            </div>
+
+            <div class="child-container-tech-stack">
+
+                <img src="MySQL Logo.png" alt="MySQL">
+                <span>MySQL</span>
+
+            </div>
+
+            <div class="child-container-tech-stack">
+
+                <img src="HTML Logo.png" alt="HTML">
+                <span>HTML</span>
+
+            </div>
+
+            <div class="child-container-tech-stack">
+
+                <img src="CSS Logo.png" alt="CSS">
+                <span>css</span>
+
+            </div>
+
+            <div class="child-container-tech-stack">
+
+                <img src="Javascript Logo.png" alt="Javascript">
+                <span>Javascript</span>
+
+            </div>
+
+            <div class="child-container-tech-stack-add">
+
+                <img src="ic_baseline-plus.png" alt="Add">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div id="add-tech-stack">
+
+        <div class="ts-box">
+
+            <div class="header-ts">
+
+                <img id="back-btn-ts" src="backbtn.png" alt="">
+                <h2>Add to Tech Stack</h2>
+
+            </div>
+
+
+            <div class="tech-stack-input">
+
+                <div class="parent-import-logo">
+
+                    <div class="import-logo" id="import-logo-box">
+
+                        <img id="preview-logo" src="ic_baseline-plus.png" alt="Add">
+
+                    </div>
+                    <span>Upload Logo</span>
+                    <input type="file" id="logo-upload" accept="image/*" hidden>
+
+                </div>
+
+                <input type="text" id="ts-name" name="ts-name" placeholder="Enter Name">
+
+                <button id="add-button-ts" type="submit">Add</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section id="projects">
+
+        <h1>Update <span class="violet">Projects</span></h1>
+
+        <div class="project-container">
+
+            <div class="graphic-design">
+                <h2>graphic designs</h2>
+                <div class="grid-image" id="gd-grid">
+                    <img src="Web Master.png" alt="" class="editable-img" data-grid="gd-grid" data-index="0">
+                    <img src="LSC National Children's Month.png" alt="" class="editable-img" data-grid="gd-grid"
+                        data-index="1">
+                    <img src="Massalang.png" alt="" class="editable-img" data-grid="gd-grid" data-index="2">
+                    <img src="Danghay2025.jpg" alt="" class="editable-img" data-grid="gd-grid" data-index="3">
+                </div>
+            </div>
+
+            <div class="merch-container">
+                <h2>merchandise</h2>
+                <div class="grid-image" id="merch-grid">
+                    <img src="ASICS Shirt 2024.jpg" alt="" class="editable-img" data-grid="merch-grid" data-index="0">
+                    <img src="Card.png" alt="" class="editable-img" data-grid="merch-grid" data-index="1">
+                    <img src="LANYARD.png" alt="" class="editable-img" data-grid="merch-grid" data-index="2">
+                    <img src="White Shirt.png" alt="" class="editable-img" data-grid="merch-grid" data-index="3">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ══ CHANGE PROJECT MODAL ══ -->
+    <div id="change-project-modal">
+        <div class="cp-box">
+            <div class="cp-header">
+                <img id="cp-back-btn" src="backbtn.png" alt="Back"
+                    onerror="this.replaceWith(Object.assign(document.createElement('button'),{textContent:'←',style:'background:none;border:none;color:white;font-size:20px;cursor:pointer;position:absolute;left:0',onclick:()=>document.getElementById('change-project-modal').style.display='none'}))">
+                <h2>Change Project</h2>
+            </div>
+            <div class="cp-slots">
+                <div class="cp-slot">
+                    <img id="cp-current-img" src="" alt="Current">
+                    <span>Current Design</span>
+                </div>
+                <div class="cp-slot cp-upload-slot" id="cp-upload-slot">
+                    <div class="cp-plus">＋</div>
+                    <span>Upload new design</span>
+                    <input type="file" id="cp-file-input" accept="image/*" hidden>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="messages">
+
+        <div class="messages-title">
+            <h1><span class="yellow">Messages</span> for you.</h1>
+        </div>
+
+        <div class="messages-toolbar">
+            <p class="messages-count">Showing <span id="msg-count">0</span> messages</p>
+            <div class="toolbar-right">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search messages...">
+                </div>
+                <button class="clear-btn" id="clear-all-btn">Clear All</button>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="messages-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Message</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="messages-body">
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+    <!-- Toast notification for admin actions -->
+    <div id="admin-toast"></div>
+
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
