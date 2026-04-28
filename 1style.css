@@ -107,6 +107,80 @@ nav a.active {
 
 }
 
+/* MOBILE */
+@media (max-width: 767px) {
+
+    nav {
+
+        margin: auto;
+        width: fit-content;
+        border-radius: 40px;
+        padding-right: 60px;
+        padding-bottom: 15px;
+        padding-left: 90px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        position: sticky;
+        top: 15px;
+        z-index: 1000;
+
+        transition: background 0.3s ease, backdrop-filter 0.3s ease;
+
+    }
+
+    nav.scrolled {
+
+        background: rgba(10, 0, 23, 0.3);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(2px);
+        border: rgba(255, 255, 255, 0.2) solid 0.5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+    }
+
+    nav a {
+
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        cursor: pointer;
+
+        padding-top: 20px;
+        border-bottom: #ae00ff00 solid 1px;
+
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+        transition: all 0.35s ease;
+
+    }
+
+    nav a.active {
+        color: #AF00FF;
+        border-bottom: #AF00FF solid 1px;
+    }
+
+    #home,
+    #projects,
+    #contact {
+
+        scroll-margin-top: 50px;
+
+    }
+
+    #home-hover:hover,
+    #projects-hover:hover,
+    #contact-hover:hover {
+
+        color: #AF00FF;
+        border-bottom: #AF00FF solid 1px;
+
+    }
+
+}
+
 /*PROFILE PART TOP - HOME PAGE*/
 
 #home {
@@ -909,52 +983,52 @@ footer {
 
 /* ADMIN LOGIN MODAL */
 
-#admin-login{
+#admin-login {
 
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 
-    display:none;
-    justify-content:center;
-    align-items:center;
+    display: none;
+    justify-content: center;
+    align-items: center;
 
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
 
-    z-index:2000;
+    z-index: 2000;
 }
 
-.admin-box{
+.admin-box {
 
-    width:350px;
-    padding:30px;
+    width: 350px;
+    padding: 30px;
 
-    border-radius:12px;
-    border:1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 
-    background: linear-gradient(#0A0017,#0A0017) padding-box,
-    linear-gradient(20deg,#AF00FF,#804A8A) border-box;
+    background: linear-gradient(#0A0017, #0A0017) padding-box,
+        linear-gradient(20deg, #AF00FF, #804A8A) border-box;
 
-    color:white;
+    color: white;
 
 }
 
-.admin-box h2{
+.admin-box h2 {
 
     text-align: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.admin-box span{
+.admin-box span {
 
     background: linear-gradient(to right, #AF00FF, #804A8A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 }
 
 .email-form-login,
@@ -1020,52 +1094,52 @@ footer {
 
 }
 
-#otp-login{
+#otp-login {
 
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
 
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 
-    display:none;
-    justify-content:center;
-    align-items:center;
+    display: none;
+    justify-content: center;
+    align-items: center;
 
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(2px);
 
-    z-index:2000;
+    z-index: 2000;
 }
 
 .admin-box-otp {
 
-    width:350px;
-    padding:30px;
+    width: 350px;
+    padding: 30px;
 
-    border-radius:12px;
-    border:1px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 
-    background: linear-gradient(#0A0017,#0A0017) padding-box,
-    linear-gradient(20deg,#AF00FF,#804A8A) border-box;
+    background: linear-gradient(#0A0017, #0A0017) padding-box,
+        linear-gradient(20deg, #AF00FF, #804A8A) border-box;
 
-    color:white;
+    color: white;
 
 }
 
-.admin-box-otp h2{
+.admin-box-otp h2 {
 
     text-align: center;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 
-.admin-box-otp span{
+.admin-box-otp span {
 
     background: linear-gradient(to right, #F39D57, #FBD49B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
 }
 
 .otp-form {
