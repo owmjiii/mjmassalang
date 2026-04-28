@@ -1129,7 +1129,7 @@ footer {
 }
 
 /* =============================================
-   MOBILE RESPONSIVE STYLES
+   MOBILE RESPONSIVE STYLES - Preserves desktop layout
    Add these at the END of your 1style.css file
    ============================================= */
 
@@ -1140,122 +1140,71 @@ footer {
         padding-right: 30px;
         padding-left: 30px;
         gap: 20px;
-        top: 10px;
     }
 
-    nav a {
-        font-size: 13px;
-    }
-
-    /* HOME SECTION */
+    /* HOME - keep same side-by-side layout, just scale down */
     #home {
-        margin-top: 40px;
-        padding-bottom: 60px;
-        padding-inline: 20px;
+        padding-inline: 10px;
     }
 
-    .profile {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    /* FIX: Remove the fixed margins that cause overlap */
     .designer {
-        margin-left: 0;
-        justify-content: center;
-        flex-direction: column-reverse;
-        gap: 6px;
-        text-align: center;
+        margin-left: 20px;
+        gap: 12px;
     }
 
     .designer h1 {
-        font-size: clamp(32px, 10vw, 52px);
+        font-size: clamp(28px, 9vw, 52px);
         margin: 0;
     }
 
     .designer span {
-        text-align: center;
-        font-size: 11px;
+        font-size: 9px;
     }
 
     .aspiring {
-        margin-right: 0;
-        justify-content: center;
-        flex-direction: column;
-        gap: 6px;
-        text-align: center;
+        margin-right: 20px;
+        gap: 14px;
     }
 
     .aspiring h1 {
-        font-size: clamp(26px, 8vw, 48px);
+        font-size: clamp(22px, 7vw, 48px);
         margin: 0;
     }
 
     .aspiring span {
-        text-align: center;
-        font-size: 11px;
-    }
-
-    .developer {
-        margin-inline: 20px;
+        font-size: 9px;
     }
 
     .developer span {
-        font-size: clamp(24px, 9vw, 48px);
-        padding-inline: 16px;
-        margin: 16px;
-    }
-
-    #tech-stack {
-        margin-top: 20px;
-        gap: 8px;
-        padding-inline: 10px;
+        font-size: clamp(22px, 8vw, 55px);
+        margin: 14px;
+        padding-inline: 14px;
     }
 
     #tech-stack img {
-        width: 24px;
+        width: 22px;
     }
 
     .motto {
-        margin-top: 35px;
-        font-size: 14px;
-        padding-inline: 10px;
-    }
-
-    /* PROJECTS SECTION */
-    #projects {
-        margin-top: 40px;
-        padding-bottom: 60px;
-        padding-inline: 16px;
-    }
-
-    .title-project {
-        margin-top: 50px;
-    }
-
-    .title-project h1 {
-        font-size: clamp(24px, 7vw, 38px);
-    }
-
-    .title-project p {
         font-size: 13px;
     }
 
-    .project-container {
-        gap: 60px;
-        margin-top: 50px;
+    /* PROJECTS */
+    #projects {
+        padding-inline: 10px;
     }
 
-    .graphic-design,
-    .merch-container {
-        flex: 1 1 100%;
-        min-width: unset;
-        max-width: 100%;
+    .title-project h1 {
+        font-size: clamp(20px, 6vw, 38px);
+    }
+
+    .project-container {
+        gap: 50px;
     }
 
     .grid-image {
-        gap: 16px;
         padding: 20px;
+        gap: 16px;
     }
 
     .system-parent-container {
@@ -1264,23 +1213,12 @@ footer {
 
     .system-container,
     .system-container-peso {
-        flex: 1 1 100%;
-        min-width: unset;
-        max-width: 100%;
-    }
-
-    .proj-text {
-        padding: 16px;
-        padding-bottom: 30px;
-    }
-
-    .website-project-parent {
-        padding: 0 4px;
+        min-width: 260px;
     }
 
     .website-project {
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
         padding: 20px;
     }
 
@@ -1290,58 +1228,34 @@ footer {
         text-align: left;
     }
 
-    .website-sub-text {
-        font-size: 13px;
-    }
-
-    /* CONTACT SECTION */
+    /* CONTACT */
     #contact {
-        padding-inline: 16px;
-    }
-
-    .title-contact {
-        margin-top: 50px;
+        padding-inline: 10px;
     }
 
     .title-contact h1 {
-        font-size: clamp(22px, 6vw, 36px);
-    }
-
-    .title-contact p {
-        font-size: 13px;
-    }
-
-    .contact-form {
-        margin-block: 40px;
-        gap: 16px;
+        font-size: clamp(18px, 5vw, 36px);
     }
 
     .name-form input,
     .email-form input {
-        width: calc(100vw - 80px);
-        max-width: 450px;
+        width: min(450px, calc(100vw - 60px));
     }
 
     .message-form textarea {
-        width: calc(100vw - 80px);
-        max-width: 450px;
+        width: min(450px, calc(100vw - 60px));
     }
 
     .form-button {
-        width: calc(100vw - 80px);
-        max-width: 450px;
+        width: min(450px, calc(100vw - 60px));
     }
 
     /* FOOTER */
     footer {
         flex-direction: column;
         margin-inline: 16px;
-        gap: 30px;
+        gap: 24px;
         padding: 24px;
-    }
-
-    .more a {
-        justify-content: flex-start;
     }
 
     /* ADMIN MODALS */
@@ -1350,54 +1264,16 @@ footer {
         width: calc(100vw - 60px);
         max-width: 350px;
         padding: 24px;
+        box-sizing: border-box;
     }
 
     .password-form input,
-    .email-form-login input {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .otp-form input {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
+    .email-form-login input,
+    .otp-form input,
     #admin-button,
     #login-button-otp {
         width: 100%;
         box-sizing: border-box;
-    }
-
-}
-
-/* Extra small phones */
-@media (max-width: 400px) {
-
-    nav {
-        padding-right: 16px;
-        padding-left: 16px;
-        gap: 14px;
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-
-    .designer h1,
-    .aspiring h1 {
-        font-size: 30px;
-    }
-
-    .developer span {
-        font-size: 22px;
-    }
-
-    .name-form input,
-    .email-form input,
-    .message-form textarea,
-    .form-button {
-        width: calc(100vw - 48px);
     }
 
 }
