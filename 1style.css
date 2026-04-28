@@ -1139,6 +1139,7 @@ footer {
     nav {
         padding-right: 30px;
         padding-left: 60px;
+        padding-bottom: 10px;
         gap: 20px;
     }
 
