@@ -2,7 +2,7 @@
 
 * {
 
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-family: "Poppins";
 
 }
 
@@ -366,19 +366,6 @@ nav a.active {
 
 }
 
-@media (max-width: 900px) {
-
-    .graphic-design,
-    .merch-container {
-        flex: 1 1 100%;
-        max-width: none;
-    }
-
-    .project-container {
-        gap: 50px;
-    }
-}
-
 .graphic-design h2,
 .merch-container h2,
 .system-project h2 {
@@ -512,22 +499,6 @@ nav a.active {
 
 }
 
-@media (max-width: 600px) {
-    .proj-text h3 {
-        font-size: 20px;
-    }
-
-    .proj-text p {
-        font-size: 14px;
-    }
-
-    .system-container,
-    .system-container-peso {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
 .website-project-parent {
 
     margin: auto;
@@ -614,20 +585,6 @@ nav a.active {
     text-align: right;
     font-size: clamp(12px, 1.5vw, 14px);
     line-height: 1.5;
-
-}
-
-@media (max-width: 768px) {
-
-    .website-project {
-        flex-direction: column;
-        gap: 15px;
-        text-align: left;
-    }
-
-    .website-sub-text {
-        text-align: left;
-    }
 
 }
 
@@ -948,44 +905,6 @@ footer {
 
 .arrow img {
     transition: transform 0.3s ease;
-}
-
-@media (max-width: 900px) {
-
-    footer {
-        flex-direction: column;
-        gap: 30px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .contact-here {
-        align-items: center;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .title-project h1,
-    .title-contact h1 {
-        font-size: 30px;
-    }
-
-    .grid-image {
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .project-container {
-        gap: 40px;
-    }
-
-    footer {
-        margin-inline: 20px;
-        padding-inline: 20px;
-    }
-
 }
 
 /* ADMIN LOGIN MODAL */
