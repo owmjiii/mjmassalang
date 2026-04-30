@@ -1148,13 +1148,13 @@ footer {
     }
 
     .designer {
-        margin-left: 30px;
+        margin-left: 35px;
         gap: 10px;
     }
 
     .designer h1 {
         font-size: clamp(30px, 11vw, 54px);
-        margin: -5;
+        margin: -8;
     }
 
     .designer span {
@@ -1162,13 +1162,13 @@ footer {
     }
 
     .aspiring {
-        margin-right: 30px;
+        margin-right: 35px;
         gap: 12px;
     }
 
     .aspiring h1 {
         font-size: clamp(28px, 9vw, 52px);
-        margin: -5;
+        margin: -8;
     }
 
     .aspiring span {
