@@ -232,3 +232,21 @@ document.getElementById("submit-btn").addEventListener("click", () => {
     });
 })();
 
+
+function updateSpanBreaks() {
+    const isMobile = window.innerWidth <= 798;
+    const dSpan = document.querySelector('.designer span');
+    const aSpan = document.querySelector('.aspiring span');
+
+    if (isMobile) {
+        dSpan.innerHTML = '// Currently studying <br> BS Information <br> Technology';
+        aSpan.innerHTML = '// Graphic Designer <br> Learning Web <br> Development';
+    } else {
+        dSpan.innerHTML = '// Currently studying <br> BS Information Technology';
+        aSpan.innerHTML = '// Graphic Designer <br> Learning Web Development';
+    }
+}
+
+// Run on load and on every resize
+updateSpanBreaks();
+window.addEventListener('resize', updateSpanBreaks);
