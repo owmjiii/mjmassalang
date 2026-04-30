@@ -239,11 +239,11 @@ function updateSpanBreaks() {
     const aSpan = document.querySelector('.aspiring span');
 
     if (isMobile) {
-        dSpan.innerHTML = '// Currently studying <br> BS Information <br> Technology';
-        aSpan.innerHTML = '// Graphic Designer <br>and focusing on <br>UI and UX Designer';
+        dSpan.innerHTML = '// Currently studying<br>BS Information<br>Technology';
+        aSpan.innerHTML = '// Graphic Designer<br>focusing on<br>UI/UX Designer';
     } else {
-        dSpan.innerHTML = '// Currently studying <br> BS Information Technology';
-        aSpan.innerHTML = '// Graphic Designer and <br>focusing on UI and UX Designer';
+        dSpan.innerHTML = '// Currently studying<br>BS Information Technology';
+        aSpan.innerHTML = '// Graphic Designer<br>focusing on UI/UX Design';
     }
 }
 
