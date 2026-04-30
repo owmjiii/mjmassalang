@@ -1148,26 +1148,26 @@ footer {
     }
 
     .designer {
-        margin-left: 25px;
+        margin-left: 30px;
         gap: 10px;
     }
 
     .designer h1 {
-        font-size: clamp(28px, 9vw, 52px);
+        font-size: clamp(30px, 11vw, 54px);
         margin: -5;
     }
 
     .designer span {
-        font-size: 6px;
+        font-size: 5px;
     }
 
     .aspiring {
-        margin-right: 25px;
+        margin-right: 30px;
         gap: 12px;
     }
 
     .aspiring h1 {
-        font-size: clamp(22px, 7vw, 48px);
+        font-size: clamp(30px, 11vw, 54px);
         margin: -5;
     }
 
@@ -1219,7 +1219,7 @@ footer {
     .website-project {
         flex-direction: column;
         gap: 10px;
-        padding: 20px;
+        padding: 10px;
     }
 
     .website-text,
