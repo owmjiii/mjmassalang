@@ -1167,7 +1167,7 @@ footer {
     }
 
     .aspiring h1 {
-        font-size: clamp(30px, 11vw, 54px);
+        font-size: clamp(27px, 8vw, 51px);
         margin: -5;
     }
 
