@@ -189,18 +189,6 @@ nav a.active {
 
 }
 
-.spanner1 {
-
-    text-align: left;
-
-}
-
-.spanner2 {
-
-    text-align: right;
-
-}
-
 .aspiring {
 
     color: white;
@@ -1199,14 +1187,6 @@ footer {
 
     .motto {
         font-size: 13px;
-    }
-
-    .spanner1 {
-        width; 100px:
-    }
-
-    .spanner2 {
-        width; 100px:
     }
 
     /* PROJECTS */
