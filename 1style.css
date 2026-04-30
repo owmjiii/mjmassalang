@@ -181,11 +181,23 @@ nav a.active {
 .designer span {
 
     color: rgb(194, 194, 194);
-
+    
     font-weight: 400;
     font-size: 11px;
     text-align: left;
     margin: 0;
+
+}
+
+.spanner1 {
+
+    text-align: left;
+
+}
+
+.spanner2 {
+
+    text-align: right;
 
 }
 
