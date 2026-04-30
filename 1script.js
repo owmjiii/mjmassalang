@@ -240,10 +240,10 @@ function updateSpanBreaks() {
 
     if (isMobile) {
         dSpan.innerHTML = '// Currently studying <br> BS Information <br> Technology';
-        aSpan.innerHTML = '// Focusing on <br>Software <br>Development and UI Design';
+        aSpan.innerHTML = '// Graphic Designer <br>and focusing on <br>UI and UX Designer';
     } else {
         dSpan.innerHTML = '// Currently studying <br> BS Information Technology';
-        aSpan.innerHTML = '// Focusing on Software <br> Development and UI Design';
+        aSpan.innerHTML = '// Graphic Designer and <br>focusing on UI and UX Designer';
     }
 }
 
